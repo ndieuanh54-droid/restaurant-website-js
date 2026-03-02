@@ -1,59 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html id="id_html">
 
 <head>
   <meta charset="utf-8">
   <title>Black Goose Bistro</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="configuration.js"></script>
+
+
 </head>
 
-<body>
-  <div class="header">
-    <a href="index.html">
-      <img src="image/blackgoose.png" alt="logo" id="logo">
-    </a>
+<body id="id_body">
+  <header>
+    <img src="image/blackgoose.png" alt="logo" id="logo">
     <br>
 
     <h1>Bistro de l'Oie noire</h1>
+  </header>
+
+  <div id="corps">
+    <h2 id="h2_resto" onclick="reduceH2('h2_resto')">Le Restaurant</h2>
+
+    <p>Le <strong>Bistro de l'Oie noire</strong> propose des déjeuners et des dîners décontractés dans une atmosphère détendue. Le menu change régulièrement pour mettre en valeur les ingrédients locaux les plus frais.</p>
+
+    <p>Récompense de l'effort apporté à la qualité du service et de  la  cuisine, le restaurant est membre de la  prestigieuse <a href="https://restaurant.org/home">Association des restaurateurs</a>.</p>
+
+
+    <p>Le menu d'Octobre!</p>
+
+
+<h2 id="h2_restauration" onclick="reduceH2('h2_restauration')">Restauration</h2>
+    <p> <em>Amusez-vous bien. Nous nous occuperons de la cuisine.</em> Le bistro peut organiser des événements allant du goûter pour une réunion à d'élégantes collectes de fonds pour des entreprises.</p>
+
+
+<h2 id="h2_brigade" onclick="reduceH2('h2_brigade')">Brigade</h2>
+
+    <table border="1">
+      <tr>
+        <td><span class="poste">Chef cuisinier</span></td>
+        <td>Luther V. Cronin</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="poste">Sous-chefs</span></td>
+        <td>Márton Vidor</td>
+      </tr>  
+      <tr>
+        <td>Lee Chi Ho (李志豪)</td>
+      </tr>           
+      <tr>
+        <td rowspan="3"><span class="poste">Chefs de partie</span></td>
+        <td>Kehla Starad</td>
+      </tr>  
+      <tr>
+        <td>Lưu Thi Bồng</td>
+      </tr> 
+      <tr>
+        <td>Sota Nakajima (中嶋 颯太)</td>
+      </tr>           
+    </table>
+
+
+<h2 id="h2_lieu" onclick="reduceH2('h2_lieu')">Lieu et heures d'ouverture</h2>
+
+    <ol>
+      <li class="adresse">Seekonk, Massachusetts, USA</li>
+      <ul>
+        <li>Du lundi au jeudi, de 11h à 21h</li>
+        <li>vendredi et samedi, de 11h à minuit</li>
+      </ul>  
+      <li class="adresse">Time Square, New York cities, USA</li>
+      <ul>
+        <li>Du mardi au jeudi, de 11h à 21h</li>
+        <li>Vendredi et samedi, de 11h à minuit</li>
+        <li>Dimanche, brunch de 10h à 14h</li>    
+      </ul>    
+    </ol>
+
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.99180412292482%2C40.75101205089848%2C-73.98019552230836%2C40.763511227428154&amp;layer=mapnik&amp;marker=40.75726030463718%2C-73.9859942" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=40.7573&amp;mlon=-73.9860#map=16/40.7573/-73.9860">Afficher une carte plus grande</a></small>
+
   </div>
-
-  <div class="centre">
-    <div class="nav">
-      <ul class="menu">
-        <li> Présentation </li>
-        <li> <a href="menuGastronomique.html"> Menu </a> </li>
-        <li> <a href="brigade.html"> La brigade </a> </li>
-        <li> <a href="info.html"> Informations pratiques </a> </li>
-        <li> <a href="reservation.html"> Réservation </a> </li>
-      </ul>
-    </div>
-    <div class="contenu">
-
-      <h2>Le Restaurant</h2>
-      <p>Le <strong>Bistro de l'Oie noire</strong> propose des déjeuners et des dîners décontractés dans une atmosphère détendue. Le menu change régulièrement pour mettre en valeur les ingrédients locaux les plus frais.</p>
-
-      <p>Récompense de l'effort apporté à la qualité du service et de  la  cuisine, le restaurant est membre de la  prestigieuse <a href="https://restaurant.org/home">Association des restaurateurs</a>.</p>
-
-
-      <p><a href="menuGastronomique.html">Le menu d'Octobre!</a></p>
-
-
-      <h2>Restauration</h2>  
-      <p> <em>Amusez-vous bien. Nous nous occuperons de la cuisine.</em> Le bistro peut organiser des événements allant du goûter pour une réunion à d'élégantes collectes de fonds pour des entreprises.</p>
-
-
-    </div>
-  </div>
-
-  <div class="footer">
+  <footer>
     <hr>
     Copyright &copy;2021 | Votre nom (Pour me contacter: <a href="mailto:me@gmail.com">m'écrire</a>) 
     <br>
     <a href="http://instagram.com/"><img src="image/instagram.svg" alt="instagram" class="social-network-logo"></a>
     <a href="http://tripadvisor.com/"><img src="image/tripadvisor.svg" alt="tripadvisor" class="social-network-logo"></a>
     <a href="http://twitter.com/"><img src="image/twitter.svg" alt="twitter" class="social-network-logo"></a>
-  </div>
+  </footer>
+
+
+  <hr>
+  <div id="config">
+  <h3>Configuration du site</h3>
+
+  <label>Choix de la marge</label>
+  <input type="text" id="marge">
+  <input type="button" id="buttonMarge" value="Changer marge"
+         onclick="changeMarge('marge')">
+  <br><br>
+
+  <label>Choix de la couleur d'arrière-plan (balise HTML)</label>
+  <input type="color" id="colorHTML">
+  <input type="button" id="buttonHTML" value="Changer couleur"
+         onclick="changerHTMLColor('colorHTML')">
+  <br><br>
+
+  <label>Choix de la couleur de fond (balise BODY)</label>
+  <input type="color" id="colorBODY"
+         onchange="changeBODYColor('colorBODY')">
+  <br><br>
+
+  <label>Nombres d'éléments dans le corps de la page :</label>
+  <input type="button" id="buttonStats" value="Statistiques"
+         onclick="statPage()">
+  <br><br>
+
+  <label>Cacher/révéler tout sauf H2 dans le corps :</label>
+  <br>
+  <input type="button" id="buttonCacher" value="Cacher" onclick="cacher()">
+  <input type="button" id="buttonReveler" value="Révéler" onclick="revele()" style="display:none;">
+</div>
 
 </body>
-
 </html>
