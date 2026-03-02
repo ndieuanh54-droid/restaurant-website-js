@@ -1,0 +1,152 @@
+
+
+html {
+  background-color: black;
+}
+
+body {
+  background-color: #faf2e4;
+  margin: 1% 10%;
+  padding: 1% 2%;
+  border: 3px solid #d1633c;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: serif; 
+  font-weight: normal;   
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #d1633c;
+  font-size: 1em;
+}
+
+hr {
+  height: 1px;  
+  background-color: #57b1dc;
+  border: none;
+}
+
+h2 + p:first-letter {
+  font-size: 2em;  
+}
+
+footer {
+  color: grey;
+  font-weight: lighter;   
+  font-size:0.7em;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  background-color: #d1633c;  
+}
+
+a:visited {
+  color: #57b1dc;    
+}
+
+.adresse {
+  font-weight: bold;
+}
+
+.poste {
+  font-weight: lighter;   
+  font-variant-caps: small-caps;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.social-network-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2.menu {
+  font-size: 2em;
+  text-align: center;
+  font-family: Bradley Hand, cursive;
+}
+
+/* TP3 */
+
+ul.menu {
+  list-style-type: none;
+  padding-inline-start: 10px;
+}
+
+small.menu {
+  font-weight: lighter;   
+  font-size:0.7em;
+  margin-bottom: 10px;  
+  display:inline-block;
+  text-align: right;
+  width:100%;  
+}
+
+p.date-menu {
+  font-size: 2em;
+  font-family: Bradley Hand, cursive; 
+  font-weight: normal;   
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3.chef {
+  color: #d1633c;
+  font-size: 1em;
+}
+
+img.chef {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+section.chef {
+  margin-top: 5em;
+}
+
+.nav {
+  background-color: #F5D6A1;
+  float: left;
+  width: 12em;
+}
+
+.contenu  {
+  margin-left:12em; 
+}
+
+.footer  {
+  overflow: hidden;
+  width: 100%;
+  color: grey;
+  font-weight: lighter;   
+  font-size:0.7em;
+  margin-bottom: 10px;  
+}
+
+.centre {
+}
+.entete {
+}
