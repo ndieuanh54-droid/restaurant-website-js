@@ -1,7 +1,9 @@
+## Live Demo
+https://ndieuanh54-droid.github.io/restaurant-website-js/
 
 ## 🍽️ Restaurant Website (HTML / CSS / JavaScript)
-
 Responsive restaurant website developed as a web development project using **HTML5, CSS3, and JavaScript**.
+
 
 ## Project Overview
 This project involves designing and building a dynamic restaurant website with an interactive user experience and a responsive layout.
